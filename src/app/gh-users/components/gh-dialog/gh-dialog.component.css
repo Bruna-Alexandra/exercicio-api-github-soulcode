@@ -1,0 +1,58 @@
+.geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.repo{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/* #dialog{
+    max-height: 150vh;
+} */
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+.userinfo mat-icon{
+padding-right: 3px;
+}
+.userinfo p{
+    margin: 5px 0;
+}
+#follow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p span{
+    font-weight: bold;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(34, 64, 99, 0.3) 0px 0px 0px 3px;
+}
+
+h1{
+    text-align: center;
+}
