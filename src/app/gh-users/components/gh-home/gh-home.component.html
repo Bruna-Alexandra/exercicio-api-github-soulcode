@@ -8,11 +8,13 @@
         matInput
         autocomplete="off"
         [formControl]="usernameToFind"
+        (keyup.enter)="showDialog()"
+        
         >
     </mat-form-field>
     <button mat-stroked-button [disabled]="usernameToFind.invalid" 
     (click)="showDialog()"
-    (keyup.enter)="showDialog()">
+    >
         <mat-icon>search</mat-icon>
     </button>
 </div>

@@ -3,10 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #673ab7; */
 }
 .container .search {
     display: flex;
     flex-direction: column;
     width: 300px;
+}
+
+button {
+    background-color: white;
 }

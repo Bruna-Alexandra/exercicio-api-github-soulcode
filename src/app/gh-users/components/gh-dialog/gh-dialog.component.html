@@ -14,7 +14,7 @@
         <mat-card class="repo" *ngFor="let item of userRepos; let i = index" [attr.data-index]="i" class="repo">
             <p>{{userRepos![i].name}}</p>
             <a [href]="userRepos![i].html_url" target="_blank">info</a>
-            <p>{{userRepos![i].stargazers_count}} stars</p>
+            <div class="stars"><mat-icon>star_border</mat-icon><p>{{userRepos![i].stargazers_count}} stars</p></div>
             <p>{{userRepos![i].language}}</p>
         </mat-card>
     </ng-template>
