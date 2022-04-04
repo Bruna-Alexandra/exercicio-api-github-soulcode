@@ -1,21 +1,22 @@
-<h1 mat-dialog-title><a [href]="user?.html_url" target="_blank">
+<div class="title"><img id="ghLogo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo"><h1 mat-dialog-title><a [href]="user?.html_url" target="_blank">
         {{user?.login}}
-    </a></h1>
+    </a></h1></div>
 <div mat-dialog-content #dialog>
     <mat-progress-spinner color="accent" mode="indeterminate" *ngIf="user == null; else content"></mat-progress-spinner>
     <ng-template #content>
-        <div class="img"><img [src]="user?.avatar_url" alt="foto do usuário {{username}}"></div>
+        <div class="img"><img [src]="user?.avatar_url" alt="foto do usuário {{username}}" id="foto"></div>
         <div class="userinfo">
             <h2>{{user?.name}}</h2>
-            <p>{{user?.bio}}</p>
+            <p id="bio">{{user?.bio}}</p>
             <div id="follow"> 
             <mat-icon>people_outline</mat-icon> <p><span>{{user?.followers}}</span> followers · <span>{{user?.following}}</span> following</p></div>
         </div>
         <mat-card class="repo" *ngFor="let item of userRepos; let i = index" [attr.data-index]="i" class="repo">
-            <p>{{userRepos![i].name}}</p>
-            <a [href]="userRepos![i].html_url" target="_blank">info</a>
-            <div class="stars"><mat-icon>star_border</mat-icon><p>{{userRepos![i].stargazers_count}} stars</p></div>
-            <p>{{userRepos![i].language}}</p>
+            <div id="repolink">
+            <h3>{{userRepos![i].name}}</h3>
+            <a [href]="userRepos![i].html_url" target="_blank"><mat-icon id="launch">launch</mat-icon></a></div>
+            <div class="stars"><mat-icon id="star">star_border</mat-icon><p >{{userRepos![i].stargazers_count}}</p></div>
+            <p id="lang">Language: {{userRepos![i].language}}</p>
         </mat-card>
     </ng-template>
 </div>
