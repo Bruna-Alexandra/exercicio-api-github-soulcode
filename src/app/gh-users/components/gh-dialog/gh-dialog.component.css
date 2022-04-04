@@ -65,7 +65,7 @@
 
 }
 .userinfo mat-icon{
-padding-right: 3px;
+padding-right: 5px;
 }
 .userinfo p{
     margin: 5px 0;
@@ -113,7 +113,3 @@ h3{
     margin-top: 0;
     margin-bottom: 8px;
 }
-
-/* #star{
-
-} */
